@@ -1,0 +1,13 @@
+# This are the required environmental variables I had to setup to get this working
+
+export CIRCUIT_DB=mongodb://127.0.0.l:27017
+export DISTRICT_DB=mongodb://127.0.0.1:27017
+export MONGO_URI=mongodb://127.0.0.1:27017/va-circuit-court-search
+export MONGO_DB=mongodb://127.0.0.1:27017
+export DBC_USER=
+export DBC_PASSWORD=
+export PASSWORD_TOKEN_SALT=
+export GOOGLE_API_KEY=
+export POSTGRES_DB=postgres:postgres@127.0.0.1:5432/va_court_search
+export LOG_ENTRIES=
+export PATH=$PATH:/usr/lib/chromium-browser

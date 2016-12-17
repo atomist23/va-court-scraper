@@ -26,7 +26,7 @@ for fips, court in courts.iteritems():
     circuit_db.add_court(court['name'], fips, location)
     court_names.append(court['name'] + ' ' + fips)
 circuit_db.add_court_location_index()
-circuit_db.commit()
+if POSTGRES: circuit_db.commit()
 
 '''
 court_names.sort()
@@ -52,7 +52,7 @@ for fips, court in courts.iteritems():
     district_db.add_court(court, fips, location)
     court_names.append(court + ' ' + fips)
 district_db.add_court_location_index()
-district_db.commit()
+if POSTGRES: district_db.commit()
 
 '''
 court_names.sort()
